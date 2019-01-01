@@ -6,3 +6,13 @@ $(document).ready(function() {
         $(this).addClass("active");
     })
 })
+
+// Navbar Scroll Effect
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+        $('nav').addClass('colour');
+    } else {
+        $('nav').removeClass('colour');
+    }
+})
