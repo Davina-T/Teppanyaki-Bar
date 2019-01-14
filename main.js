@@ -9,12 +9,18 @@ $(document).ready(function() {
 
 // Navbar Scroll Effect
 
-$(document).ready(function() {
-    $(window).scroll(function() {
-        if($(this).scrollTop() > 100) {
-            $('nav').css({"opacity" : "1"})
-        } else {
-            $('nav').css({"opacity": "0"})
-        }
-    })
-})
+(function ($) {
+    $(document).ready(function(){
+      $(".navbar").hide();
+
+      $(function () {
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.navbar').stop().fadeIn(800);
+              } else {
+                  $('.navbar').stop().fadeOut(800);
+              }
+          });
+      });
+  });
+}(jQuery));
