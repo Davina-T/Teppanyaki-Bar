@@ -9,10 +9,12 @@ $(document).ready(function() {
 
 // Navbar Scroll Effect
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-        $('nav').addClass('colour');
-    } else {
-        $('nav').removeClass('colour');
-    }
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 100) {
+            $('nav').css({"opacity" : "1"})
+        } else {
+            $('nav').css({"opacity": "0"})
+        }
+    })
 })

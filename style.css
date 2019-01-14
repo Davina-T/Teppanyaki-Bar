@@ -13,7 +13,7 @@ body {
 }
 
 .padding {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .padding img {
@@ -22,10 +22,15 @@ body {
 
 /*--------- Navigation ---------*/
 
+nav {
+    opacity: 0;
+}
+
 .navbar {
     overflow: hidden;
     font-size: 20px;
     transition: 0.6s ease;
+    background-color: white;
 }
 
 .navbar.colour {
@@ -119,7 +124,7 @@ body {
 
 .history-paragraph {
     font-family: 'Fira Sans Condensed', sans-serif;
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 20px;
     text-align: center;
 }
