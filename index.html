@@ -11,11 +11,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Staatliches" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Fira+Sans+Condensed|Satisfy|Staatliches" rel="stylesheet">
         <link href="style.css" rel="stylesheet"/>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#navbar-collapse-main" data-offset="250">
 
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-expand-lg fixed-top" role="navigation">
@@ -48,7 +48,7 @@
         <div class="padding" id="history">
             <div class="container">
                 <div class="row">
-                    <div class="history-text col-lg-6 col-md-12 col-sm-12">
+                    <div class="history-box col-lg-6 col-md-12 col-sm-12">
                         <h1 class="history-title">Our History</h1>
                         <hr id="history-hr">
                         <p class="history-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar sed mi vel eleifend. Nulla ac leo non magna placerat pretium vitae nec velit. Aenean mollis ligula vitae elementum laoreet. In tincidunt lectus et lorem aliquam, vitae tristique nulla imperdiet. In eu dictum elit. Morbi luctus velit vitae lacus venenatis gravida. Aenean dictum dignissim elit, sit amet faucibus purus efficitur ut. Vivamus eu interdum ante, sit amet aliquet libero.</p>
@@ -64,21 +64,334 @@
         <div id="image-section1"></div>
 
         <!-- Menu -->
-
         <div class="padding" id="menu">
-            <div class="container">
+            <div class="container" id="menuCollapse">
                 <div class="row">
-                    
+                    <div class="menu-box col-lg-12 col-md-12 col-sm-12">
+                        <h1 class="menu-title">Our Menu</h1>
+                        <hr id="menu-hr">
+                    </div>
                 </div>
-                <div class="row">
 
+                <!-- Menu buttons -->
+                <div class="row menu-buttons">
+                    <button class="btn btn-link colour" type="button" data-toggle="collapse" data-target="#banquets" aria-expanded="false" aria-controls="banquets">
+                    Banquets
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#alacarte" aria-expanded="false" aria-controls="alacarte">
+                    À la carte
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#lunchSpecial" aria-expanded="false" aria-controls="lunchSpecial">
+                    Lunch Special
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#kidsMeal" aria-expanded="false" aria-controls="kidsMeal">
+                    Kids
+                    </button>
+                </div>
+
+                <!-- Banquet section -->
+                <div class="collapse show" id="banquets" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="banquet-text">All Banquets Served with (optional):</h3>
+                            <ul>
+                                <li>Salad</li>
+                                <li>Prawn Appetiser</li>
+                                <li>Miso Soup</li>
+                                <li>Fried/Steamed Rice</li>
+                                <li>Hibachi Vegetables</li>
+                                <li>Ice Cream</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">A. Teppanyaki Special</h3>
+                            <p class="menu-description">Teriyaki Chicken & Hibachi Snapper</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$39.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">F. Chef's Specialty</h3>
+                            <p class="menu-description">Hibachi King Prawns & Fillet Mignon</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$55.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">B. Cleveland Special</h3>
+                            <p class="menu-description">Fillet Mignon & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$46.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">G. Moreton Bay Blend</h3>
+                            <p class="menu-description">Moreton Bay Bugs, Hibachi Salmon & Hibachi Scallops</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$67.50</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">C. Raby Bay Delight</h3>
+                            <p class="menu-description">Hibachi King Prawns & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$48.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">H. Seafood Harmony</h3>
+                            <p class="menu-description">Lobster Tail, Hibachi King Prawns & Hibachi Snapper</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$76.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">D. Pacific Pleaser</h3>
+                            <p class="menu-description">Hibachi Salmon & Fillet Mignon</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$49.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">I. VIP Specialty</h3>
+                            <p class="menu-description">Lobster Tail, Fillet Mignon, Hibachi Scallops & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$89.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">E. Redland Delight</h3>
+                            <p class="menu-description">Moreton Bay Bugs & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$52.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">J. Vegetable Banquet</h3>
+                            <p class="menu-description">Seasonal Vegetables</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$29.50</h3>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Alacarte section -->
+                <div class="collapse" id="alacarte" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="alacarte-text">Main Meals</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Vegetarian Meal</h3>
+                            <p class="menu-description">Seasonal garden-fresh vegetables</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$16.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Scallops</h3>
+                            <p class="menu-description">Mouth-watering scallops</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$32.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Teriyaki Chicken</h3>
+                            <p class="menu-description">Tender Chicken with Teriyaki Sauce</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$22.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi King Prawns</h3>
+                            <p class="menu-description">Scrumptious prawns with special Prawn Sauce</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$32.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Snapper</h3>
+                            <p class="menu-description">Seasonal fresh white fish</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$22.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Moreton Bay Bugs</h3>
+                            <p class="menu-description">Luscious bugs</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$39.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Salmon</h3>
+                            <p class="menu-description">Fresh and tasty pink fish</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$26.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Lobster Tail</h3>
+                            <p class="menu-description">Delicious lobster</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$47.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Fillet Mignon</h3>
+                            <p class="menu-description">Delectable beef</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$27.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row side-dishes">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="alacarte-text">Side Dishes</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Steamed Rice <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Salad <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Miso Soup <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Vegetables <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$5.50</h3>
+                        </div>
+                    </div>                     
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Fried Rice <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$5.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Prawn Appetiser <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$8.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Ice Cream</h3>
+                            <p class="menu-description">Chocolate, Vanilla or Green Tea ice cream</h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                    </div>                                         
+                </div>
+
+                <!-- Alacarte section -->
+                <div class="collapse" id="lunchSpecial" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="lunch-kids-price">$26.50</h3>
+                            <p class="lunch-kids-text">(11:30AM-2:00PM)</p>
+                        </div>
+                    </div>
+
+                    <div class="row lunch-kids-items">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3>Salad</h3>
+                            <h3>Fried Rice</h3>
+                            <h3>Hibachi Vegetables</h3>
+                            <h3>Ice Cream</h3>
+                            <h3 class="menu-word">with</h3>
+                            <h3 class="menu-option">Fillet Mignon & Snapper</h3>
+                            <h3 class="menu-word">or</h3>
+                            <h3 class="menu-option">Teriyaki Chicken & Prawns</h3>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Kids section -->
+                <div class="collapse" id="kidsMeal" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="lunch-kids-price">$17.50</h3>
+                            <p class="lunch-kids-text">(for children up to 12 years old)</p>
+                        </div>
+                    </div>
+
+                    <div class="row lunch-kids-items">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="menu-option">Teriyaki Chicken</h3>
+                            <h3 class="menu-word">or</h3>
+                            <h3 class="menu-option">Hibachi Snapper</h3>
+                            <h3 class="menu-word">with</h3>
+                            <h3>Fried Rice</h3>
+                            <h3>Ice Cream</h3>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
 
         <!-- Image section -->
+        <div id="image-section2"></div>
 
         <!-- Gallery -->
+        <div class="padding" id="gallery">
+
+        </div>
 
         <!-- Business, Location -->
 

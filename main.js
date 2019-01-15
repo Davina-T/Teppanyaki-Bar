@@ -1,10 +1,17 @@
-// Active Effect
+// Active Navbar Effect
 
 $(document).ready(function() {
     $(".nav a").on("click", function() {
         $(".nav").find(".active").removeClass("active");
         $(this).addClass("active");
     })
+})
+
+// Active Menu Effect
+
+$(".btn-link").click(function() {
+    $(".btn-link.colour").removeClass("colour");
+    $(this).toggleClass("colour");
 })
 
 // Navbar Scroll Effect
@@ -15,10 +22,10 @@ $(document).ready(function() {
 
       $(function () {
           $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                  $('.navbar').stop().fadeIn(800);
+              if ($(this).scrollTop()) {
+                  $('.navbar').stop().fadeIn(500);
               } else {
-                  $('.navbar').stop().fadeOut(800);
+                  $('.navbar').stop().fadeOut(500);
               }
           });
       });

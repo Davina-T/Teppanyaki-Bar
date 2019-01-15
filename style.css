@@ -73,10 +73,11 @@ body {
 }
 
 .home-title {
-    -webkit-text-stroke: 1px white;
+    /* -webkit-text-stroke: 1px white; */
     color: #96000F;
     font-size: 80px;
     letter-spacing: 2px;
+    font-family: 'Satisfy', cursive;
 }
 
 #home-hr {
@@ -95,7 +96,7 @@ body {
 
 /*--------- History ---------*/
 
-.history-text {
+.history-box {
     margin-top: 80px;
 }
 
@@ -118,7 +119,7 @@ body {
 .history-paragraph {
     font-family: 'Fira Sans Condensed', sans-serif;
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -138,3 +139,162 @@ body {
 }
 
 /*--------- Menu ---------*/
+
+.menu-box {
+    margin-top: 40px;
+}
+
+.menu-title {
+    text-align: center;
+    color: #96000F;
+    font-size: 60px;
+}
+
+#menu-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em auto;
+    padding: 0;
+    width: 15%;    
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-link {
+    font-size: 24px;
+    position: relative;
+    color: black;
+    margin: 0 20px;
+}
+
+.btn-link.colour {
+    color: #96000F;
+}
+
+.btn-link.colour2 {
+    color: black;
+}
+
+.btn-link:hover {
+    color: #96000F;
+    text-decoration: none;
+}
+
+.btn-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-link:hover:before {
+    visibility: visible;
+    background-color: black;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.btn-link:focus {
+    text-decoration: none;
+}
+
+.menu-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.banquet-text {
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alacarte-text {
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.side-dishes {
+    text-align: center;
+}
+
+.menu-box ul {
+    list-style: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.menu-headings {
+    font-family: 'Caveat Brush', cursive;
+    color: black;
+}
+
+.menu-price {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    color: #96000F;
+}
+
+.menu-description {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.menu-headings em {
+    font-size: 16px;
+}
+
+.lunch-kids-price {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    color: #96000F;
+    font-size: 48px;
+}
+
+.lunch-kids-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.lunch-kids-items {
+    font-family: 'Caveat Brush', cursive;
+    color: black;
+    text-align: center;
+}
+
+.menu-word {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.menu-option {
+    color: #96000F;
+}
+
+/*--------- Image Section 2 ---------*/
+
+#image-section2 {
+    background: url(img/image-section2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
