@@ -298,3 +298,54 @@ body {
     position: relative;
     background-size: cover;
 }
+
+.experience {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Satisfy', cursive;
+}
+
+.experience-text {
+    font-size: 60px;
+    color: white;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/*--------- Gallery ---------*/
+
+.gallery-box {
+    margin-top: 80px;
+    position: relative;
+}
+
+.gallery-box2 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper-photo2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*--------- Contact ---------*/
+
+.contact-wrapper {
+    height: 600px;
+    background-color: #96000F;
+    padding-top: 80px;
+}
+
+/*--------- Responsive ---------*/
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+    .wrapper-photo2 {
+        position: relative;
+        margin-top: 40px;
+    }
+}
