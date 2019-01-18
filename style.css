@@ -16,6 +16,7 @@ body {
     padding: 60px 0;
 }
 
+
 .padding img {
     width: 100%;
 }
@@ -334,9 +335,42 @@ body {
 /*--------- Contact ---------*/
 
 .contact-wrapper {
-    height: 600px;
+    height: 70%;
     background-color: #96000F;
     padding-top: 80px;
+}
+
+.location-heading {
+    color: white;
+    padding-right: 80px;
+}
+
+.location-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.location-text i {
+    font-size: 30px;
+}
+
+.time-heading {
+    font-family: 'Staatliches', cursive;
+    margin-top: 35px;
+    color: white;
+    font-size: 24px;
+}
+
+.time-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.mobile-break {
+    display: none;
 }
 
 /*--------- Responsive ---------*/
@@ -347,5 +381,55 @@ body {
     .wrapper-photo2 {
         position: relative;
         margin-top: 40px;
+    }
+
+    .location-heading {
+        margin-left: 20px;
+    }
+
+    .address-row {
+        margin: auto;
+    }
+
+    .contact-wrapper {
+        margin-bottom: 500px;
+    }
+
+    .mobile-break {
+        display: initial;
+    }
+}
+
+/* Ipad */
+@media screen and (max-width: 768px) {
+    .location-text i {
+        font-size: 30px;
+    }
+}
+
+/* Desktops */
+
+@media screen and (max-width: 992px) {
+    .contact-wrapper {
+        height: 145%;
+    }
+    
+    .address-row {
+        margin-bottom: 40px;
+    }
+
+    .phone-number {
+        margin-top: 60px;
+    }
+}
+
+/* Large Desktops */ 
+@media screen and (max-width: 1200px) {
+    .phone-icon {
+        margin-top: 30px;
+    }
+
+    .facebook-link {
+        margin-top: 45px;
     }
 }
