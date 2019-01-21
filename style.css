@@ -334,10 +334,9 @@ body {
 
 /*--------- Contact ---------*/
 
-.contact-wrapper {
-    height: 70%;
+.contact-container {
     background-color: #96000F;
-    padding-top: 80px;
+    padding: 40px 40px;
 }
 
 .location-heading {
@@ -354,6 +353,10 @@ body {
 
 .location-text i {
     font-size: 30px;
+}
+
+.phone-icon {
+    margin-top: 30px;
 }
 
 .time-heading {
@@ -387,16 +390,12 @@ body {
         margin-left: 20px;
     }
 
-    .address-row {
-        margin: auto;
-    }
-
-    .contact-wrapper {
-        margin-bottom: 500px;
-    }
-
     .mobile-break {
         display: initial;
+    }
+
+    .gallery4 {
+        margin-top: 20px;
     }
 }
 
@@ -410,10 +409,6 @@ body {
 /* Desktops */
 
 @media screen and (max-width: 992px) {
-    .contact-wrapper {
-        height: 145%;
-    }
-    
     .address-row {
         margin-bottom: 40px;
     }
@@ -426,7 +421,7 @@ body {
 /* Large Desktops */ 
 @media screen and (max-width: 1200px) {
     .phone-icon {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .facebook-link {
