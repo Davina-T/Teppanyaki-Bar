@@ -619,30 +619,48 @@ footer h6 {
     }
 
     .container-align {
-        margin-left: 0px;
+        margin-left: 60px;
+    }
+
+    .business-title {
+        margin-top: 40px;
     }
 
     .location-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .location-text, .location-text1, .time-text {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .map {
         margin-top: 360px;
-        left: 25px;
+        left: 75px;
     }
 
     .fa-phone {
-        margin-top: 80px;
+        margin-top: 70px;
+    }
+
+    .contact-container {
+        min-height: 1050px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        left: 25px;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .location-heading {
-        font-size: 18px;
+    .container-align {
+        margin-left: 40px;
+    }
+
+    .fa-phone {
+        margin-top: 65px;
     }
 
     .map {
@@ -652,13 +670,13 @@ footer h6 {
     }
 
     .menu-box ul {
-        padding-right: 80px;
+        padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .location-heading {
-        font-size: 18px;
+    .container-align {
+        margin-left: 20px;
     }
 
     .map {
