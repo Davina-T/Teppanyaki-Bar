@@ -16,6 +16,9 @@ body {
     padding: 60px 0;
 }
 
+.padding2 {
+    padding-top: 60px;
+}
 
 .padding img {
     width: 100%;
@@ -53,6 +56,19 @@ body {
 .navbar .nav-link:hover {
     color: #96000F;
     transition: .4s ease;
+}
+
+/*--------- Line separator ---------*/
+
+.ipad-line-break {
+    display: none;
+}
+
+#separator {
+    height: 10px;
+    margin: 20px auto;
+    border: 0;
+    background: #96000F;
 }
 
 /*--------- Home ---------*/
@@ -93,6 +109,10 @@ body {
 
 .home-phrase {
     letter-spacing: 1px;
+}
+
+.ipad-logo {
+    display: none;
 }
 
 /*--------- History ---------*/
@@ -334,19 +354,37 @@ body {
 
 /*--------- Contact ---------*/
 
+.column {
+    margin-top: 30px;
+}
+
+.column2 {
+    margin-top: 15px;
+}
+
 .contact-container {
     background-color: #96000F;
     padding: 40px 40px;
+    min-height: 600px;
+}
+
+.container-align {
+    margin-top: 50px;
 }
 
 .location-heading {
     color: white;
-    padding-right: 80px;
+}
+
+.location-text1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
 }
 
 .location-text {
     font-family: 'Fira Sans Condensed', sans-serif;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 16px;
     color: white;
 }
@@ -355,8 +393,22 @@ body {
     font-size: 30px;
 }
 
-.phone-icon {
-    margin-top: 30px;
+.fa-phone {
+    margin-top: 50px;
+}
+
+.time-heading1 {
+    font-family: 'Staatliches', cursive;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.time-heading2 {
+    font-family: 'Staatliches', cursive;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
 }
 
 .time-heading {
@@ -372,59 +424,208 @@ body {
     color: white;
 }
 
-.mobile-break {
-    display: none;
+.map {
+    position: absolute;
+    max-width: 550px;
+}
+
+/*--------- Footer ---------*/
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 /*--------- Responsive ---------*/
 
-/* Mobile */
-
-@media screen and (max-width: 576px) {
-    .wrapper-photo2 {
-        position: relative;
-        margin-top: 40px;
+/* Large Desktops */ 
+@media screen and (max-width: 1200px) {
+    .contact-container {
+        min-height: 950px;
     }
 
-    .location-heading {
-        margin-left: 20px;
+    .map {
+        margin-top: 350px;
+        left: 220px;
+        max-width: 600px;
     }
 
-    .mobile-break {
+    .container-align {
+        margin-left: 180px;
+    }
+}
+
+/* Desktops */
+@media screen and (max-width: 992px) {
+    #home {
+        background: white;
+        color: black;
+        height: 60%;
+    }
+
+    #home-hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid black;
+        margin: 1em auto;
+        padding: 0;
+        width: 20%;
+    }
+
+    .ipad-logo {
         display: initial;
     }
 
-    .gallery4 {
-        margin-top: 20px;
+    .ipad-line-break {
+        display: initial;
+    }
+
+    #image-section1 {
+        display: none;
+    }
+
+    #image-section2 {
+        display: none;
+    }
+
+    /* history */
+    .history-box {
+        margin-top: 40px;
+    }
+
+    .history-title, .menu-title {
+        font-size: 40px;
+    }
+
+    #history-hr, #menu-hr {
+        width: 20%;
+    }
+
+    .history-paragraph {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* contact */
+    .contact-container {
+        min-height: 900px;
+    }
+
+    .map {
+        max-width: 500px;
+        left: 200px;
+    }
+
+    .container-align {
+        margin-left: 150px;
     }
 }
 
 /* Ipad */
 @media screen and (max-width: 768px) {
+    .home-title {
+        font-size: 60px;
+    }
+
+    .home-phrase {
+        font-size: 20px;
+    }
+
+    .container-align {
+        margin: 0 auto;
+    }
+
     .location-text i {
-        font-size: 30px;
-    }
-}
-
-/* Desktops */
-
-@media screen and (max-width: 992px) {
-    .address-row {
-        margin-bottom: 40px;
+        font-size: 20px;
     }
 
-    .phone-number {
+    .time-heading, .time-heading1, .time-heading2, .btn-link {
+        font-size: 18px;
+    }
+
+    .location-text, .location-text1, .time-text, .menu-box ul, .menu-word {
+        font-size: 14px;
+    }
+
+    .banquet-text, .menu-description {
+        font-size: 16px;
+    }
+    
+    .menu-headings, .menu-price, .menu-choice, .menu-option {
+        font-size: 22px;
+    }
+
+    .lunch-kids-price {
+        font-size: 36px;
+    }
+
+    #banquets, #alarcarte, #lunchSpecial, #kidsMeal {
+        padding: 0 10px;
+    }
+
+    .fa-phone {
         margin-top: 60px;
     }
-}
 
-/* Large Desktops */ 
-@media screen and (max-width: 1200px) {
-    .phone-icon {
-        margin-top: 50px;
+    .map {
+        max-width: 400px;
+        left: 135px;
     }
 
-    .facebook-link {
-        margin-top: 45px;
+    .container-align {
+        margin-left: 100px;
+    }
+
+    .contact-container {
+        min-height: 740px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+    .home-title {
+        font-size: 40px;
+    }
+
+    .home-phrase {
+        font-size: 18px;
+    }
+
+    .wrapper-photo2 {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .gallery4 {
+        margin-top: 20px;
+    }
+
+    .container-align {
+        margin-left: 0px;
+    }
+
+    .location-heading {
+        font-size: 22px;
+    }
+
+    .location-text, .location-text1, .time-text {
+        font-size: 13px;
+    }
+
+    .map {
+        margin-top: 360px;
+        left: 25px;
+    }
+
+    .fa-phone {
+        margin-top: 80px;
     }
 }
