@@ -71,6 +71,16 @@ body {
     background: #96000F;
 }
 
+.left-separator {
+    width: 45%;
+    float: left;
+}
+
+.right-separator {
+    width: 45%;
+    float: right;
+}
+
 /*--------- Home ---------*/
 
 #home {
