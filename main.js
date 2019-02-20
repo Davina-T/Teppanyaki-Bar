@@ -12,15 +12,15 @@ $(document).ready(function() {
     $(".nav a").on("click", function() {
         $(".nav").find(".active").removeClass("active");
         $(this).addClass("active");
-    })
-})
+    });
+});
 
 // Active Menu Effect
 
 $(".btn-link").click(function() {
     $(".btn-link.colour").removeClass("colour");
     $(this).toggleClass("colour");
-})
+});
 
 // Navbar Scroll Effect
 
@@ -39,3 +39,17 @@ $(".btn-link").click(function() {
       });
   });
 }(jQuery));
+
+// Contact Link Hover Effects
+
+$(".facebook-link").mouseenter(function() {
+    $(".facebook-link").addClass("colour");
+}).mouseleave(function() {
+    $(".facebook-link").removeClass("colour");
+});
+
+$(".address-link").mouseenter(function() {
+    $(".address-link").addClass("colour");
+}).mouseleave(function() {
+    $(".address-link").removeClass("colour");
+});
