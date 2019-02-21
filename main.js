@@ -56,6 +56,13 @@ $(".address-link").mouseenter(function() {
 
 // Scroll Animation
 
+$(document).ready(function(){
+    $('section').css('width',$(window).width());
+    $(window).resize(function(){
+        $('section').css('width',$(window).width());
+    });
+});
+
 var slideLeft = {
     duration: 2000,
     distance: '300px',

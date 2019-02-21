@@ -30,6 +30,10 @@ body {
     width: 100%;
 }
 
+section {
+    overflow: hidden;
+}
+
 /*--------- Scrollbar ---------*/
 
 /* width */
@@ -491,6 +495,11 @@ background: #b30000;
     transition: .6s ease;
 }
 
+.max-row {
+    align-content: center;
+    align-items: center;
+}
+
 /*--------- Footer ---------*/
 footer {
     text-align: center;
@@ -514,16 +523,8 @@ footer h6 {
 
     .map {
         margin-top: 350px;
-        left: 220px;
+        left: 20vh;
         max-width: 600px;
-    }
-
-    .container-align {
-        margin-left: 180px;
-    }
-
-    body {
-        overflow-x: hidden;
     }
 }
 
@@ -560,6 +561,7 @@ footer h6 {
     #image-section2 {
         display: none;
     }
+}
 
 /* Desktops */
 @media screen and (max-width: 992px) {
@@ -588,11 +590,6 @@ footer h6 {
 
     .map {
         max-width: 500px;
-        left: 200px;
-    }
-
-    .container-align {
-        margin-left: 150px;
     }
 }
 
@@ -604,10 +601,6 @@ footer h6 {
 
     .home-phrase {
         font-size: 20px;
-    }
-
-    .container-align {
-        margin: 0 auto;
     }
 
     .location-text i {
@@ -644,15 +637,10 @@ footer h6 {
 
     .map {
         max-width: 400px;
-        left: 135px;
-    }
-
-    .container-align {
-        margin-left: 100px;
     }
 
     .contact-container {
-        min-height: 740px;
+        min-height: 780px;
     }
 }
 
@@ -674,10 +662,6 @@ footer h6 {
 
     .gallery4 {
         margin-top: 20px;
-    }
-
-    .container-align {
-        margin-left: 60px;
     }
 
     .business-title {
@@ -702,7 +686,7 @@ footer h6 {
     }
 
     .contact-container {
-        min-height: 1050px;
+        min-height: 1150px;
     }
 }
 
@@ -713,10 +697,6 @@ footer h6 {
 }
 
 @media screen and (max-width: 430px) {
-    .container-align {
-        margin-left: 40px;
-    }
-
     .fa-phone {
         margin-top: 65px;
     }
