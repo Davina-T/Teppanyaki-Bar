@@ -521,14 +521,14 @@ footer h6 {
     }
 }
 
-/* Desktops */
-@media screen and (max-width: 992px) {
+/* Ipad Landscape */
+@media screen and (max-width: 1024px) {
     #home {
         background: white;
         color: black;
         height: 60%;
     }
-
+    
     #home-hr {
         display: block;
         height: 1px;
@@ -555,6 +555,8 @@ footer h6 {
         display: none;
     }
 
+/* Desktops */
+@media screen and (max-width: 992px) {
     /* history */
     .history-box {
         margin-top: 40px;

@@ -56,46 +56,37 @@ $(".address-link").mouseenter(function() {
 
 // Scroll Animation
 
-ScrollReveal().reveal('.history-box', { 
+var slideUp = {
     duration: 2000,
-    origin: 'left',
-    distance: '100px',
+    distance: '300px',
+    origin: 'bottom',
     viewFactor: 0.4
-});
+}
 
-ScrollReveal().reveal('.history-image', { 
+var slideUp2 = {
     duration: 2000,
-    origin: 'right',
-    distance: '100px',
-    viewFactor: 0.4
-});
+    distance: '300px',
+    origin: 'bottom',
+    viewFactor: 0.8,
+    delay: 200
+}
 
-ScrollReveal().reveal('.gallery-image1', { 
+var slideUp3 = {
     duration: 2000,
-    origin: 'left',
-    distance: '100px',
-    viewFactor: 0.4
-});
+    distance: '300px',
+    origin: 'bottom',
+    viewFactor: 0.8,
+    delay: 400
+}
 
-ScrollReveal().reveal('.gallery-image2', { 
-    duration: 2000,
-    origin: 'right',
-    distance: '100px',
-    viewFactor: 0.4
-});
+ScrollReveal().reveal('.history-box', slideUp);
 
-ScrollReveal().reveal('.gallery-image3', { 
-    delay: 1000,
-    duration: 2000,
-    origin: 'left',
-    distance: '100px',
-    viewFactor: 0.4
-});
+ScrollReveal().reveal('.history-image', slideUp);
 
-ScrollReveal().reveal('.gallery-image4', { 
-    delay: 1000,
-    duration: 2000,
-    origin: 'right',
-    distance: '100px',
-    viewFactor: 0.4
-});
+ScrollReveal().reveal('.gallery-image1', slideUp);
+
+ScrollReveal().reveal('.gallery-image2', slideUp);
+
+ScrollReveal().reveal('.gallery-image3', slideUp2);
+
+ScrollReveal().reveal('.gallery-image4', slideUp3);
