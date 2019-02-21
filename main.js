@@ -56,37 +56,28 @@ $(".address-link").mouseenter(function() {
 
 // Scroll Animation
 
-var slideUp = {
+var slideLeft = {
     duration: 2000,
     distance: '300px',
-    origin: 'bottom',
+    origin: 'left',
     viewFactor: 0.4
 }
 
-var slideUp2 = {
+var slideRight = {
     duration: 2000,
     distance: '300px',
-    origin: 'bottom',
-    viewFactor: 0.8,
-    delay: 200
+    origin: 'right',
+    viewFactor: 0.4
 }
 
-var slideUp3 = {
-    duration: 2000,
-    distance: '300px',
-    origin: 'bottom',
-    viewFactor: 0.8,
-    delay: 400
-}
+ScrollReveal().reveal('.history-box', slideLeft);
 
-ScrollReveal().reveal('.history-box', slideUp);
+ScrollReveal().reveal('.history-image', slideRight);
 
-ScrollReveal().reveal('.history-image', slideUp);
+ScrollReveal().reveal('.gallery-image1', slideLeft);
 
-ScrollReveal().reveal('.gallery-image1', slideUp);
+ScrollReveal().reveal('.gallery-image2', slideRight);
 
-ScrollReveal().reveal('.gallery-image2', slideUp);
+ScrollReveal().reveal('.gallery-image3', slideLeft);
 
-ScrollReveal().reveal('.gallery-image3', slideUp2);
-
-ScrollReveal().reveal('.gallery-image4', slideUp3);
+ScrollReveal().reveal('.gallery-image4', slideRight);
