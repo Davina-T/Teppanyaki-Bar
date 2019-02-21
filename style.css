@@ -521,6 +521,10 @@ footer h6 {
     .container-align {
         margin-left: 180px;
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
 /* Ipad Landscape */
