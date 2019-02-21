@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -128,6 +132,7 @@ background: #b30000;
     font-size: 80px;
     letter-spacing: 2px;
     font-family: 'Satisfy', cursive;
+    -webkit-animation-delay: 0.5s;
 }
 
 #home-hr {
@@ -138,10 +143,12 @@ background: #b30000;
     margin: 1em auto;
     padding: 0;
     width: 20%;
+    -webkit-animation-delay: 0.7s;
 }
 
 .home-phrase {
     letter-spacing: 1px;
+    -webkit-animation-delay: 1.2s;
 }
 
 .ipad-logo {

@@ -53,3 +53,49 @@ $(".address-link").mouseenter(function() {
 }).mouseleave(function() {
     $(".address-link").removeClass("colour");
 });
+
+// Scroll Animation
+
+ScrollReveal().reveal('.history-box', { 
+    duration: 2000,
+    origin: 'left',
+    distance: '100px',
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('.history-image', { 
+    duration: 2000,
+    origin: 'right',
+    distance: '100px',
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('.gallery-image1', { 
+    duration: 2000,
+    origin: 'left',
+    distance: '100px',
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('.gallery-image2', { 
+    duration: 2000,
+    origin: 'right',
+    distance: '100px',
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('.gallery-image3', { 
+    delay: 1000,
+    duration: 2000,
+    origin: 'left',
+    distance: '100px',
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('.gallery-image4', { 
+    delay: 1000,
+    duration: 2000,
+    origin: 'right',
+    distance: '100px',
+    viewFactor: 0.4
+});
