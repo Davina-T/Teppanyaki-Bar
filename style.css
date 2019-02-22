@@ -495,11 +495,6 @@ background: #b30000;
     transition: .6s ease;
 }
 
-.max-row {
-    align-content: center;
-    align-items: center;
-}
-
 /*--------- Footer ---------*/
 footer {
     text-align: center;
@@ -522,9 +517,13 @@ footer h6 {
     }
 
     .map {
-        margin-top: 350px;
-        left: 20vh;
         max-width: 600px;
+        left:  20%;
+        margin-top: 350px;
+    }
+
+    .col-lg-6 {
+        padding-left: 100px;
     }
 }
 
@@ -589,7 +588,7 @@ footer h6 {
     }
 
     .map {
-        max-width: 500px;
+        max-width: 550px;
     }
 }
 
@@ -636,11 +635,11 @@ footer h6 {
     }
 
     .map {
-        max-width: 400px;
+        max-width: 450px;
     }
 
     .contact-container {
-        min-height: 780px;
+        min-height: 820px;
     }
 }
 
@@ -678,7 +677,7 @@ footer h6 {
 
     .map {
         margin-top: 360px;
-        left: 75px;
+        left: 10%;
     }
 
     .fa-phone {
