@@ -725,4 +725,8 @@ footer h6 {
     .menu-price {
         font-size: 18px;
     }
+
+    .contactSection.col-lg-6 {
+        padding-left: 0px;
+    }
 }
