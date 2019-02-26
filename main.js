@@ -64,14 +64,14 @@ $(document).ready(function(){
 });
 
 var slideLeft = {
-    duration: 2000,
+    duration: 1000,
     distance: '300px',
     origin: 'left',
     viewFactor: 0.4
 }
 
 var slideRight = {
-    duration: 2000,
+    duration: 1000,
     distance: '300px',
     origin: 'right',
     viewFactor: 0.4
